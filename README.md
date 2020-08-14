@@ -1,4 +1,5 @@
 OpenBTS project on a fresh Ubuntu 16.04 server with uhd.
+Edit run Ubuntu 18.04
 
 ## Components
 The installation consists next source builds:

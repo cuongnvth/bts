@@ -206,7 +206,7 @@ fi
 if [ "$COMPONENT" == "all" ] || [ "$COMPONENT" == "asterisk" ]; then
 	echo "# asterisk - building Debian package"
 	sayAndDo cd asterisk
-	rm -rf range-asterisk* asterisk-*
+	#rm -rf range-asterisk* asterisk-*
 	sayAndDo ./build.sh
 	sayAndDo mv range-asterisk_* ../$BUILDNAME
 	sayAndDo cd ..

@@ -1,5 +1,7 @@
 #!/bin/bash
 
+exit 0;
+
 VERSION=1.2.1
 
 sayAndDo () {

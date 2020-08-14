@@ -54,6 +54,9 @@ elif [ "$RADIO" == "USRP1" ]; then
 elif [ "$RADIO" == "B100" ] || [ "$RADIO" == "B110" ] || [ "$RADIO" == "B200" ] || [ "$RADIO" == "B210" ] || [ "$RADIO" == "B200mini" ]   || [ "$RADIO" == "B205mini" ] || [ "$RADIO" == "N200" ] || [ "$RADIO" == "N210" ]; then
 	MANUFACTURER="Ettus"
 	EXTRA_CONFIGURE_FLAGS="--with-uhd"
+elif [ "$RADIO" == "UmTRX" ] ; then
+	MANUFACTURER="Fairwaves"
+	EXTRA_CONFIGURE_FLAGS="--with-uhd"	
 fi
 export EXTRA_CONFIGURE_FLAGS
 
@@ -95,7 +98,7 @@ echo "#"
 
 echo "# adding additional repo tools"
 installIfMissing software-properties-common
-installIfMissing python-software-properties
+#installIfMissing python-software-properties
 echo "# - done"
 echo
 

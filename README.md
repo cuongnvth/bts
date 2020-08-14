@@ -1,5 +1,6 @@
 OpenBTS project on a fresh Ubuntu 16.04 server with uhd.
-Edit run Ubuntu 18.04
+
+Edit run Ubuntu 18.04 (g++-5, gcc-5)
 
 ## Components
 The installation consists next source builds:
@@ -7,7 +8,7 @@ The installation consists next source builds:
 - [OpenBTS](https://github.com/RangeNetworks/dev)
 - [Systemd Scripts](https://github.com/nadiia-kotelnikova/openbts_systemd_scripts)
 
-Support B200mini and B205mini usrp devices :+1: 
+Support UmTRX, B200mini and B205mini usrp devices :+1: 
 
 Installation goes without errors if you do not install UHD driver manually before OpenBTS installation. For the Ettus manufacture build.sh script automatically installs UHD driver from the Ubuntu repository. I would suggest installing from the beginning on fresh OS. Here what I am doing:
 ## Configure and Build

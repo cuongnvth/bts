@@ -1,4 +1,5 @@
 #!/bin/bash
+exit 0;
 
 VERSION=11.7.0
 
